@@ -9,28 +9,28 @@ const products = [
   { name: 'M-Sand', category: Categories.MATERIALS, image: 'm-sand.webp', desc: 'Sifted manufactured sand, perfect for structural strength.' },
   { name: 'P-Sand', category: Categories.MATERIALS, image: 'p-sand.webp', desc: 'Fine-grained plastering sand for the perfect wall finish.' },
   { name: 'River Sand (Poozhi)', category: Categories.MATERIALS, image: 'river-sand.jpg', desc: 'Authentic, triple-washed natural river sand.' },
-  { name: 'Ordinary Earth', category: Categories.MATERIALS, image: 'https://images.unsplash.com/photo-1463947628408-f8581a2f4acc?auto=format&fit=crop&q=80&w=600', desc: 'Fine red earth ideal for landscaping and filling.' },
-  { name: 'Silica Sand', category: Categories.MATERIALS, image: 'https://images.unsplash.com/photo-1533221008682-fdb8a2b5e0c5?auto=format&fit=crop&q=80&w=600', desc: 'Pure silica sand for specialized industrial applications.' },
-  { name: 'WMM', category: Categories.MATERIALS, image: 'https://images.unsplash.com/photo-1541888941255-081d746ed28c?auto=format&fit=crop&q=80&w=600', desc: 'Wet Mix Macadam for superior pavement base.' },
-  { name: 'GSB', category: Categories.MATERIALS, image: 'https://images.unsplash.com/photo-1582266255765-fa5cf1a1d501?auto=format&fit=crop&q=80&w=600', desc: 'Granular Sub Base for robust road infrastructure.' },
-  { name: 'Rubble', category: Categories.MATERIALS, image: 'https://images.unsplash.com/photo-1541976590-713945680c65?auto=format&fit=crop&q=80&w=600', desc: 'Hard rock rubble for foundations and retaining walls.' },
-  { name: 'Rubble C-Wall', category: Categories.MATERIALS, image: 'https://images.unsplash.com/photo-1551029506-080764a217ad?auto=format&fit=crop&q=80&w=600', desc: 'High-quality rubble specifically for C-wall construction.' },
-  { name: 'Hollow Bricks', category: Categories.MATERIALS, image: 'https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&q=80&w=600', desc: 'Durable, lightweight blocks for modern construction.' },
-  { name: 'Traditional Bricks', category: Categories.MATERIALS, image: 'https://images.unsplash.com/photo-1590069230002-70cc6a45bc2s?auto=format&fit=crop&q=80&w=600', desc: 'Kalin burnt red clay bricks for timeless builds.' },
+  { name: 'Ordinary Earth', category: Categories.MATERIALS, image: 'ordinary-sand.jpg', desc: 'Fine red earth ideal for landscaping and filling.' },
+  { name: 'Silica Sand', category: Categories.MATERIALS, image: 'silicon-sand.jpg', desc: 'Pure silica sand for specialized industrial applications.' },
+  { name: 'WMM', category: Categories.MATERIALS, image: 'wmm.webp', desc: 'Wet Mix Macadam for superior pavement base.' },
+  { name: 'GSB', category: Categories.MATERIALS, image: 'gsb.webp', desc: 'Granular Sub Base for robust road infrastructure.' },
+  { name: 'Rubble', category: Categories.MATERIALS, image: 'rubble.jpg', desc: 'Hard rock rubble for foundations and retaining walls.' },
+  { name: 'Rubble C-Wall', category: Categories.MATERIALS, image: 'c-wall.webp', desc: 'High-quality rubble specifically for C-wall construction.' },
+  { name: 'Hollow Bricks', category: Categories.MATERIALS, image: 'holo-bricks.jpg', desc: 'Durable, lightweight blocks for modern construction.' },
+  { name: 'Traditional Bricks', category: Categories.MATERIALS, image: 'ishtika.jpg', desc: 'Kalin burnt red clay bricks for timeless builds.' },
 
   // Deep Excavation
   { name: 'Filling the Land', category: Categories.EXCAVATION, image: 'https://images.unsplash.com/photo-1585914641050-fa9883c4e21c?auto=format&fit=crop&q=80&w=600', desc: 'Professional land leveling and filling services with quality earth.' },
   { name: 'Land Development', category: Categories.EXCAVATION, image: 'https://images.unsplash.com/photo-1503387762-592fdb0f4268?auto=format&fit=crop&q=80&w=600', desc: 'Comprehensive site preparation and plot development services.' },
 
   // Heavy Equipment Rent System
-  { name: 'Diesel Generator', category: Categories.RENTALS, image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600', desc: 'High-capacity silent diesel generators for backup power.' },
-  { name: 'Heavy Crane', category: Categories.RENTALS, image: 'https://images.unsplash.com/photo-1517030330234-94c4fa948ebc?auto=format&fit=crop&q=80&w=600', desc: 'Versatile cranes for lifting heavy construction materials.' },
-  { name: 'JCB', category: Categories.RENTALS, image: 'https://images.unsplash.com/photo-1579762590130-1017e8c07e03?auto=format&fit=crop&q=80&w=600', desc: 'Multi-purpose backhoe loaders for all your digging needs.' },
-  { name: 'Hitachi Excavators', category: Categories.RENTALS, image: 'https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&q=80&w=600', desc: 'All type Hitachi excavators for heavy-duty earthmoving.' },
-  { name: 'Roller', category: Categories.RENTALS, image: 'https://images.unsplash.com/photo-1621905252507-b354bcadcabc?auto=format&fit=crop&q=80&w=600', desc: 'Efficient road rollers for soil and asphalt compaction.' },
+  { name: 'Diesel Generator', category: Categories.RENTALS, image: 'DC.jpg', desc: 'High-capacity silent diesel generators for backup power.' },
+  { name: 'Heavy Crane', category: Categories.RENTALS, image: 'Crain.jpg', desc: 'Versatile cranes for lifting heavy construction materials.' },
+  { name: 'JCB', category: Categories.RENTALS, image: 'JCB.jpg', desc: 'Multi-purpose backhoe loaders for all your digging needs.' },
+  { name: 'Hitachi Excavators', category: Categories.RENTALS, image: 'Hittachi.jpg', desc: 'All type Hitachi excavators for heavy-duty earthmoving.' },
+  { name: 'Roller', category: Categories.RENTALS, image: 'roller.jpg', desc: 'Efficient road rollers for soil and asphalt compaction.' },
   { name: 'Grader', category: Categories.RENTALS, image: 'https://images.unsplash.com/photo-1585503865961-24bc39247192?auto=format&fit=crop&q=80&w=600', desc: 'Precision motor graders for road leveling and drainage.' },
-  { name: 'Bulldozer', category: Categories.RENTALS, image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=600', desc: 'Powerful dozers for clearing and heavy-duty grading.' },
-  { name: 'Tipper / Torrez', category: Categories.RENTALS, image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600', desc: 'Strong tippers and multi-axle Torrez trucks for logistics.' },
+  { name: 'Bulldozer', category: Categories.RENTALS, image: 'Cat-Bulldozer.jpg', desc: 'Powerful dozers for clearing and heavy-duty grading.' },
+  { name: 'Tipper / Torrez', category: Categories.RENTALS, image: 'tipper.jpg', desc: 'Strong tippers and multi-axle Torrez trucks for logistics.' },
 ];
 
 const productsGrid = document.getElementById('products-grid');
