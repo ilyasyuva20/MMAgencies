@@ -54,7 +54,7 @@ function renderProducts() {
               <div class="product-info">
                 <h3>${product.name}</h3>
                 <p>${product.desc}</p>
-                <button class="btn" onclick="window.open('https://wa.me/919846924679?text=I am interested in ${product.name}', '_blank')">Get Quote</button>
+                <button class="btn" onclick="window.open('https://wa.me/919846924679?text=${encodeURIComponent('I am interested in ' + product.name)}', '_blank')">Get Quote</button>
               </div>
             </div>
           `).join('')}
@@ -76,7 +76,7 @@ function initScrollAnimations() {
         entry.target.classList.add('active');
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.05 });
 
   revealElements.forEach(el => observer.observe(el));
 }
