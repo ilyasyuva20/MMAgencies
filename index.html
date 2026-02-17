@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M&M Agencies | Premier Construction Materials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Michroma&family=Stardos+Stencil:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <div class="logo-mm">M&M</div>
+        <div class="logo-agencies">Agencies</div>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-content container">
+      <h1>Quality Materials,<br>Right at Your Site.</h1>
+      <p>Reliable Supply chain for your construction needs.</p>
+      <a href="#products" class="btn">Explore Products</a>
+    </div>
+  </section>
+
+  <section id="about" class="container reveal">
+    <div class="section-title">
+      <h2>About Us</h2>
+      <div class="line"></div>
+    </div>
+    <p class="section-intro">
+      M&M Agencies is a reliable partner in building dreams by delivering top-quality materials on time.
+      With years of experience in the construction supply industry, we ensure that your projects never stall
+      due to material shortage. Our commitment to quality and punctuality makes us the premier choice for
+      builders and contractors.
+    </p>
+  </section>
+
+  <section id="products" class="container reveal">
+    <div class="section-title">
+      <h2>Our Products</h2>
+      <div class="line"></div>
+    </div>
+    <div class="products-grid reveal-stagger" id="products-grid">
+      <!-- Products will be injected here via JS for cleaner code -->
+    </div>
+  </section>
+
+  <section id="services" class="container reveal">
+    <div class="section-title">
+      <h2>Services</h2>
+      <div class="line"></div>
+    </div>
+    <div class="services-content">
+      <div class="service-card">
+        <div class="icon">🚚</div>
+        <h3>On-site Delivery</h3>
+        <p>We deliver directly to your construction spot with our fleet of specialized trucks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="container reveal">
+    <div class="section-title">
+      <h2>Our Supply Sites</h2>
+      <div class="line"></div>
+    </div>
+    <div class="gallery">
+      <div class="gallery-item h-2"><img
+          src="https://images.unsplash.com/photo-1503387762-592fdb0f4268?auto=format&fit=crop&q=80&w=800"
+          alt="Supply Site 1"></div>
+      <div class="gallery-item"><img
+          src="https://images.unsplash.com/photo-1541976590-713945680c65?auto=format&fit=crop&q=80&w=600"
+          alt="Supply Site 2"></div>
+      <div class="gallery-item v-2"><img
+          src="https://images.unsplash.com/photo-1582266255765-fa5cf1a1d501?auto=format&fit=crop&q=80&w=800"
+          alt="Supply Site 3"></div>
+      <div class="gallery-item"><img
+          src="https://images.unsplash.com/photo-1517420812314-8e84b1173d9b?auto=format&fit=crop&q=80&w=600"
+          alt="Supply Site 4"></div>
+      <div class="gallery-item h-2"><img
+          src="https://images.unsplash.com/photo-1590069230002-70cc6a45bc2s?auto=format&fit=crop&q=80&w=800"
+          alt="Supply Site 5"></div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="container reveal">
+    <div class="section-title">
+      <h2>What Clients Say</h2>
+      <div class="line"></div>
+    </div>
+    <div class="testimonial-slider">
+      <div class="slide">
+        <p>"M&M Agencies is our go-to for all sand and brick requirements. Their punctuality is unmatched."</p>
+        <h4>- Rajesh Kumar, Contractor</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h3>M&M Agencies</h3>
+          <p>Your premier construction material partner.</p>
+          <p>📞 +91 98765 43210</p>
+        </div>
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 M&M Agencies. All rights reserved.</p>
+        <a href="#" class="whatsapp-btn">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
