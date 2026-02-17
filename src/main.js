@@ -1,7 +1,7 @@
 const products = [
-  { name: 'M-Sand', image: 'https://images.unsplash.com/photo-1517420812314-8e84b1173d9b?auto=format&fit=crop&q=80&w=600', desc: 'Sifted manufactured sand, perfect for structural strength.' },
+  { name: 'M-Sand', image: 'msand.webp', desc: 'Sifted manufactured sand, perfect for structural strength.' },
   { name: 'P-Sand', image: 'https://images.unsplash.com/photo-1541888941255-081d746ed28c?auto=format&fit=crop&q=80&w=600', desc: 'Fine-grained plastering sand for the perfect wall finish.' },
-  { name: 'River Sand (Poozhi)', image: 'https://images.unsplash.com/photo-1582294119803-08709420076a?auto=format&fit=crop&q=80&w=600', desc: 'Authentic, triple-washed natural river sand.' },
+  { name: 'River Sand (Poozhi)', image: 'river-sand.jpg', desc: 'Authentic, triple-washed natural river sand.' },
   { name: 'Gravel', image: 'https://images.unsplash.com/photo-1533221008682-fdb8a2b5e0c5?auto=format&fit=crop&q=80&w=600', desc: 'Natural crushed stone for drainage and strong foundations.' },
   { name: 'Earth (Mannu)', image: 'https://images.unsplash.com/photo-1463947628408-f8581a2f4acc?auto=format&fit=crop&q=80&w=600', desc: 'Raw red earth, ideal for landscaping and filling.' },
   { name: 'Hollow Bricks', image: 'https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&q=80&w=600', desc: 'Durable, lightweight blocks for modern construction.' },
