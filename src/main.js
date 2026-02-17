@@ -28,7 +28,7 @@ const products = [
   { name: 'JCB', category: Categories.RENTALS, image: 'JCB.jpg', desc: 'Multi-purpose backhoe loaders for all your digging needs.' },
   { name: 'Hitachi Excavators', category: Categories.RENTALS, image: 'Hittachi.jpg', desc: 'All type Hitachi excavators for heavy-duty earthmoving.' },
   { name: 'Roller', category: Categories.RENTALS, image: 'roller.jpg', desc: 'Efficient road rollers for soil and asphalt compaction.' },
-  { name: 'Grader', category: Categories.RENTALS, image: 'https://images.unsplash.com/photo-1585503865961-24bc39247192?auto=format&fit=crop&q=80&w=600', desc: 'Precision motor graders for road leveling and drainage.' },
+  { name: 'Grader', category: Categories.RENTALS, image: 'grader.jpg', desc: 'Precision motor graders for road leveling and drainage.' },
   { name: 'Bulldozer', category: Categories.RENTALS, image: 'Cat-Bulldozer.jpg', desc: 'Powerful dozers for clearing and heavy-duty grading.' },
   { name: 'Tipper / Torrez', category: Categories.RENTALS, image: 'tipper.jpg', desc: 'Strong tippers and multi-axle Torrez trucks for logistics.' },
 ];
@@ -54,7 +54,7 @@ function renderProducts() {
               <div class="product-info">
                 <h3>${product.name}</h3>
                 <p>${product.desc}</p>
-                <button class="btn" onclick="window.open('https://wa.me/919876543210?text=I am interested in ${product.name}', '_blank')">Get Quote</button>
+                <button class="btn" onclick="window.open('https://wa.me/919846924679?text=I am interested in ${product.name}', '_blank')">Get Quote</button>
               </div>
             </div>
           `).join('')}
@@ -137,4 +137,43 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProducts();
   initScrollAnimations();
   renderTestimonials();
+
+  // Contact Form Popup Logic
+  const contactForm = document.getElementById('contact-form');
+  const hiddenIframe = document.getElementById('hidden_iframe');
+  const popupOverlay = document.getElementById('popup-overlay');
+  const closePopupBtn = document.getElementById('close-popup');
+
+  let isSubmitting = false;
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', () => {
+      isSubmitting = true;
+    });
+  }
+
+  if (hiddenIframe) {
+    hiddenIframe.addEventListener('load', () => {
+      if (isSubmitting) {
+        popupOverlay.classList.add('active');
+        contactForm.reset();
+        isSubmitting = false;
+      }
+    });
+  }
+
+  if (closePopupBtn) {
+    closePopupBtn.addEventListener('click', () => {
+      popupOverlay.classList.remove('active');
+    });
+  }
+
+  // Close popup on overlay click
+  if (popupOverlay) {
+    popupOverlay.addEventListener('click', (e) => {
+      if (e.target === popupOverlay) {
+        popupOverlay.classList.remove('active');
+      }
+    });
+  }
 });

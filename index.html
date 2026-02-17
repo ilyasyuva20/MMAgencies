@@ -106,23 +106,44 @@
         <div class="footer-info">
           <h3>M&M Agencies</h3>
           <p>Your premier construction material partner.</p>
-          <p>📞 +91 98765 43210</p>
+          <p>📞 +91 98469 24679</p>
         </div>
         <div class="contact-form">
-          <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Your Message"></textarea>
+          <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd7r-_-HdmsxCxOb6LmnOI1eO7KR-3ZWksn5_OAgSeMrVZ4PA/formResponse"
+            method="POST" target="hidden_iframe" id="contact-form">
+            <input type="text" name="entry.61405063" placeholder="Name" required>
+            <input type="email" name="entry.430976715" placeholder="Email" required>
+            <textarea name="entry.1419757304" placeholder="Your Message"></textarea>
+
+            <!-- Google Form Metadata -->
+            <input type="hidden" name="fvv" value="1">
+            <input type="hidden" name="partialResponse" value='[null,null,"-4153813511525004075"]'>
+            <input type="hidden" name="pageHistory" value="0">
+            <input type="hidden" name="fbzx" value="-4153813511525004075">
+            <input type="hidden" name="submissionTimestamp" value="-1">
+
             <button type="submit" class="btn">Send Message</button>
           </form>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 M&M Agencies. All rights reserved.</p>
-        <a href="#" class="whatsapp-btn">Chat on WhatsApp</a>
+        <a href="https://wa.me/919846924679?text=Hi" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
       </div>
     </div>
   </footer>
+
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+  <div id="popup-overlay" class="popup-overlay">
+    <div class="popup-content">
+      <div class="popup-icon">✓</div>
+      <h3>Message Sent!</h3>
+      <p>Thank you for reaching out. We will get back to you shortly.</p>
+      <button id="close-popup" class="btn">Perfect</button>
+    </div>
+  </div>
 
   <script type="module" src="./src/main.js"></script>
 </body>
